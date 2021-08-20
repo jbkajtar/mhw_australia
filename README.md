@@ -15,7 +15,7 @@ This code has been written to generate MHW metrics for the marine region around 
 
 # code
 
-Python code for computing MHW metrics. Data source paths must first be specified in each of the scripts.
+Python code for computing MHW metrics. Data source paths must first be specified in each of the scripts. The raw observed daily sea surface temperature data is not provided here, but more information about the data and how to access can be found here: https://doi.org/10.25921/RE9P-PT57.
 
 |File              |Description|
 |------------------|-----------|
@@ -27,6 +27,29 @@ Python code for computing MHW metrics. Data source paths must first be specified
 
 Marine heatwaves detection code, available at: https://github.com/ecjoliver/marineHeatWaves. The code provided here has been slightly adapted, but the original module should also work.
 
+# post-processing
+
+MATLAB code for post-processing of MHW metrics.
+
+|File              |Description|
+|------------------|-----------|
+|area_average.m        |Function to compute an area-average|
+|area_make.m           |Function to compute a cell area array, used in area_average.m|
+|findrange.m           |Function to find a range in an array|
+|pp_mhw_stats.m        |Post-processing of MHW field data|
+|pp_mhw_strongest.m    |Post-processing of strongest and longest detected MHWs|
+
+# data
+
+Various source and output data produced by the code.
+
+|File              |Description|
+|------------------|-----------|
+|oni.data.txt                                                  |Observed Oceanic Nino Index (ONI) data, provided by NOAA/PSL|
+|sst_ts.aus.NOAA_OISST.AVHRR.v2-1_modified.nc                  |Area-averaged daily SST timeseries for case study regions|
+|mhw_cats.aus.NOAA_OISST.AVHRR.v2-1_modified.nc                |MHW metrics: annual field data|
+|mhw_stats.processed.aus.NOAA_OISST.AVHRR.v2-1_modified.nc     |MHW metrics: post-processed data for producing figures|
+|mhw_strongest.processed.aus.NOAA_OISST.AVHRR.v2-1_modified.nc |MHW metrics: post-processed data of the strongest and longest MHWs|
 
 # References
 
@@ -38,4 +61,4 @@ Kajtar, J.B., N.J. Holbrook, V. Hernaman, A catalogue of marine heatwave charact
 
 # Acknowledgements
 
-We acknowledge the World Climate Research Programme's Working Group on Coupled Modelling, which is responsible for CMIP, and we thank the climate modelling groups for producing and making available their model output. CMIP6 model outputs were made available with the assistance of resources from the National Computational Infrastructure (NCI), which is supported by the Australian Government. NOAA High Resolution SST data were provided by the NOAA National Centers for Environmental Information. We acknowledge Eric Oliver for the use of his marineHeatWaves python module, freely available at https://github.com/ecjoliver/marineHeatWaves. 
+NOAA High Resolution SST data were provided by the NOAA National Centers for Environmental Information. We thank them for making this data publicly available. We acknowledge the compuational resources provided by the National Computational Infrastructure (NCI), which is supported by the Australian Government. We acknowledge Eric Oliver for the use of his marineHeatWaves python module, freely available at https://github.com/ecjoliver/marineHeatWaves. 
