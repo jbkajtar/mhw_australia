@@ -18,7 +18,6 @@ import scipy.io as io
 
 # marine heatwave modules
 import marineHeatWaves_jbk as mhw
-import ecoliver as ecj
 
 # set paths and filenames
 sourcepath = '' # location of observational data
