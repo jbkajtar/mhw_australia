@@ -61,4 +61,6 @@ Kajtar, J.B., N.J. Holbrook, V. Hernaman, A catalogue of marine heatwave charact
 
 # Acknowledgements
 
+We acknowledge support from the Australian Government’s National Environmental Science Program (NESP) Earth Systems and Climate Change (ESCC) Hub, and the Australian Research Council’s Centre of Excellence for Climate Extremes. The research was conducted under ESCC Hub Project 5.8: ‘Marine and coastal climate services for extremes’. We acknowledge the input and support of project leader Kathleen L. McInnes and the whole Project 5.8 team. JBK and NJH acknowledge further support from the NESP Phase 2 Climate Systems Hub.
+
 NOAA High Resolution SST data were provided by the NOAA National Centers for Environmental Information. We thank them for making this data publicly available. We acknowledge the compuational resources provided by the National Computational Infrastructure (NCI), which is supported by the Australian Government. We acknowledge Eric Oliver for the use of his marineHeatWaves python module, freely available at https://github.com/ecjoliver/marineHeatWaves. 
