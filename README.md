@@ -1,6 +1,8 @@
 # Australian marine heatwave data (mhw_australia)
 
-Code for generating marine heatwave (MHW) metrics from observational data for Kajtar et al. (2021). Marine heatwaves are calculated following the Hobday et al. (2016) definition, using the marineHeatWaves python module (https://github.com/ecjoliver/marineHeatWaves). Marine heatwave categories follow the definition given by Hobday et al. (2018).
+Code for generating marine heatwave (MHW) metrics from observational data for: Kajtar, J.B., N.J. Holbrook, V. Hernaman, A catalogue of marine heatwave metrics and trends for the Australian region. J. South. Hemisph. Earth Syst. Sci., 71 (2021) 284–302. https://doi.org/10.1071/ES21014. 
+
+Marine heatwaves are calculated following the Hobday et al. (2016) definition, using the marineHeatWaves python module (https://github.com/ecjoliver/marineHeatWaves). Marine heatwave categories follow the definition given by Hobday et al. (2018).
 
 This code has been written to generate MHW metrics for the marine region around Australia (100°E-170°E, 50°S-0°). The metrics are computed from daily observational sea surface temperature (SST) data, using NOAA 0.25° daily Optimum Interpolation Sea Surface Temperature (OISST) over the period 1982-2020. Marine heatwaves are computed with respect to the 1983-2012 climatology. The marine heatwave data are provided on a grid point basis across the domain. Area-averaged SST timeseries and marine heatwave metrics are also provided for five case study regions: the Western Australia coast, Torres Strait, Great Barrier Reef, Tasman Sea, and South Australian Basin.
 
@@ -15,7 +17,7 @@ This code has been written to generate MHW metrics for the marine region around 
 
 # code
 
-Python code for computing MHW metrics. Data source paths must first be specified in each of the scripts. The raw observed daily sea surface temperature data is not provided here, but more information about the data and how to access can be found here: https://doi.org/10.25921/RE9P-PT57.
+Python code for computing MHW metrics. Data source paths must first be specified in each of the scripts. The raw observed daily sea surface temperature data (NOAA OISST) is not provided here, but more information about the data and how to access can be found at: https://doi.org/10.25921/RE9P-PT57.
 
 |File              |Description|
 |------------------|-----------|
@@ -57,7 +59,7 @@ Hobday, A.J., L. V. Alexander, S.E. Perkins-Kirkpatrick, D.A. Smale, S.C. Straub
 
 Hobday, A.J., E.C.J. Oliver, A. Sen Gupta, J.A. Benthuysen, M.T. Burrows, M.G. Donat, N.J. Holbrook, P.J. Moore, M.S. Thomsen, T. Wernberg, D.A. Smale, Categorizing and naming marine heatwaves, Oceanography. 31 (2018) 162–173. https://doi.org/10.5670/oceanog.2018.205.
 
-Kajtar, J.B., N.J. Holbrook, V. Hernaman, A catalogue of marine heatwave characteristics and trends for the Australian region. Under review at the Journal of Southern Hemisphere Earth Systems Science. (2021)
+Kajtar, J.B., N.J. Holbrook, V. Hernaman, A catalogue of marine heatwave metrics and trends for the Australian region. J. South. Hemisph. Earth Syst. Sci., 71 (2021) 284–302. https://doi.org/10.1071/ES21014.
 
 # Acknowledgements
 
